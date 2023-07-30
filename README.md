@@ -22,7 +22,7 @@ The ADKG is composed of the spatial branch, the spectral branch, and the combina
 
 - Quantitative evaluation results on the WV3 dataset of pansharpening.
 
-![wv3](show_image/wv3.png#pic_center=300x200)
+![wv3](show_image/wv3.png#pic_center)
 
 - Quantitative evaluation results on the WV2 dataset of pansharpening (generalization capability).
 
