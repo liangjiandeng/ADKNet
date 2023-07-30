@@ -34,9 +34,9 @@ The ADKG is composed of the spatial branch, the spectral branch, and the combina
 
 # Get Started
 ## Dataset
-- The pansharpening datasets used in this paper are WV3 and WV2, which can be found [here](https://resources.maxar.com/). Due to the copyright of the datasets, we are unable to upload them. You can download the data and simulate it according to the simulation process in our paper. We recommend you process the datasets into the h5py format, otherwise the data loading section needs to be rewritten. After that, you can place the training dataset in the "ADKNet_for_pansharpening/training_data" folder, and the testing datasets in the "ADKNet_for_pansharpening/test_data" folder.
+- The pansharpening datasets used in this paper are WV3 and WV2, which can be found [here](https://resources.maxar.com/). Due to the copyright of the datasets, we are unable to upload them. You can download the data and simulate it according to the simulation process in our paper. We recommend you process the datasets into the h5py format, otherwise the data loading section needs to be rewritten. After that, you can place the training dataset [here](ADKNet_for_pansharpening/training_data/), and the testing datasets [here](ADKNet_for_pansharpening/test_data/) folder.
 
-- The HSISR (Hyper-Spectral Image Super-Resolution) datasets used in our paper are the CAVE and HARVARD, which can be found [here](https://github.com/J-FHu/Fusformer). After downloading the datasets, you can place the training dataset in the "ADKNet_for_HSISR/training_data" folder, and the testing datasets in the "ADKNet_for_HSISR/test_data" folder.
+- The HSISR (Hyper-Spectral Image Super-Resolution) datasets used in our paper are the CAVE and HARVARD, which can be found [here](https://github.com/J-FHu/Fusformer). After downloading the datasets, you can place the training dataset [here](ADKNet_for_HSISR/training_data/), and the testing datasets [here](ADKNet_for_HSISR/test_data/).
 
 ## Installation and Dependencies
 ```shell
@@ -46,11 +46,11 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-- For pansharpening, we provide the model weight which is trained on the WV3 dataset for 275000 iterations, which can be found in [this folder](ADKNet_for_pansharpening/Weights/). We have also provided some testing samples in the exact test data folder.
+- For pansharpening, we provide the model weight which is trained on the WV3 dataset for 275000 iterations, which can be found [here](ADKNet_for_pansharpening/Weights/). We have also provided some testing samples [here](ADKNet_for_pansharpening/test_data/).
 
-- For HSISR, we provide the model weight which is trained on the CAVE dataset for around 125000 iterations, which can be found in the "ADKNet_for_HSISR/Weights" folder.
+- For HSISR, we provide the model weight which is trained on the CAVE dataset for around 125000 iterations, which can be found [here](ADKNet_for_HSISR/Weights/).
 
-- For faster training and inference, you can install the [DDF operation](https://github.com/theFoxofSky/ddfnet), and uncomment the corresponding contents: line 135-163 in [this file](ADKNet_for_pansharpening/ADKG.py), line 4 in [this file](ADKNet_for_pansharpening/model.py), line 135-163 in [this file](ADKNet_for_HSISR/ADKG.py), and line 4 in [this file](ADKNet_for_HSISR/model.py).
+- For faster training and inference, you can install the [DDF operation](https://github.com/theFoxofSky/ddfnet), and uncomment the corresponding contents: line 135-163 in [this](ADKNet_for_pansharpening/ADKG.py) file, line 4 in [this](ADKNet_for_pansharpening/model.py) file, line 135-163 in [this](ADKNet_for_HSISR/ADKG.py)  file, and line 4 in [this](ADKNet_for_HSISR/model.py) file.
 
 ```shell
 # pansharpening train and test
