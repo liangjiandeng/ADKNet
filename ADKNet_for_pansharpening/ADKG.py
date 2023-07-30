@@ -132,6 +132,7 @@ class ADKGenerator(nn.Module):
 
         return torch.sum(torch.mul(x_pad, kernel), [4, 5])
 
+'''
 # Fast ADKG
 from ddf import DDFFunction
 ddf = DDFFunction.apply
@@ -159,5 +160,6 @@ class Fast_ADKGenerator(nn.Module):
                      self.kernel_combine).type_as(x)
         output = output.reshape(b, c, h, w)
         return output
+'''
 
 
