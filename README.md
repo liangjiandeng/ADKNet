@@ -50,15 +50,19 @@ pip install -r requirements.txt
 
 - For HSISR, we provide the model weight which is trained on the CAVE dataset for around 125000 iterations, which can be found in the "ADKNet_for_HSISR/Weights" folder.
 
+- For faster training and inference, you can uncomment the 
+
 ```shell
 # pansharpening train and test
 cd ADKNet_for_pansharpening
 python train.py
-python test.py
+python test_single.py
+python test_multi.py
 # HSISR train and test
+cd ..
 cd ADKNet_for_HSISR
 python train.py
-python test.py
+python test_multi.py
 ```
 
 # Citation
