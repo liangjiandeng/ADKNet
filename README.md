@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-- For pansharpening, we provide the model weight which is trained on the WV3 dataset for 275000 iterations, which can be found in the "ADKNet_for_pansharpening/Weights" folder. We have also provided some testing samples in the exact test data folder.
+- For pansharpening, we provide the model weight which is trained on the WV3 dataset for 275000 iterations, which can be found in [this folder](ADKNet_for_pansharpening/Weights/). We have also provided some testing samples in the exact test data folder.
 
 - For HSISR, we provide the model weight which is trained on the CAVE dataset for around 125000 iterations, which can be found in the "ADKNet_for_HSISR/Weights" folder.
 
