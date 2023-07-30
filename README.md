@@ -22,7 +22,7 @@ The ADKG is composed of the spatial branch, the spectral branch, and the combina
 
 - Quantitative evaluation results on the WV3 dataset of pansharpening.
 
-![wv3](show_image/wv3.png#pic_center)
+![wv3](show_image/wv3.png#pic_center=300x200)
 
 - Quantitative evaluation results on the WV2 dataset of pansharpening (generalization capability).
 
@@ -34,9 +34,9 @@ The ADKG is composed of the spatial branch, the spectral branch, and the combina
 
 # Get Started
 ## Dataset
-- The pansharpening datasets used in this paper are WV3 and WV2, which can be found on [this website](https://resources.maxar.com/). Due to the copyright of the datasets, we are unable to upload them. You can download the data and simulate it according to the simulation process in our paper. We recommend you process the datasets into the h5py format, otherwise the data loading section needs to be rewritten. After that, you can place the training dataset [here](ADKNet_for_pansharpening/training_data/), and the testing datasets [here](ADKNet_for_pansharpening/test_data/).
+- The pansharpening datasets used in this paper are WV3 and WV2, which can be found on [this website](https://resources.maxar.com/). Due to the copyright of the datasets, we are unable to upload them. You can download the data and simulate it according to the simulation process in our paper. We recommend you process the datasets into the h5py format, otherwise the data loading section needs to be rewritten. After that, you can place the training dataset [here](ADKNet_for_pansharpening/training_data/) and the testing datasets [here](ADKNet_for_pansharpening/test_data/).
 
-- The HSISR (Hyper-Spectral Image Super-Resolution) datasets used in our paper are the CAVE and HARVARD, which can be found on [this website](https://github.com/J-FHu/Fusformer). After downloading the datasets, you can place the training dataset [here](ADKNet_for_HSISR/training_data/), and the testing datasets [here](ADKNet_for_HSISR/test_data/).
+- The HSISR (Hyper-Spectral Image Super-Resolution) datasets used in our paper are the CAVE and HARVARD, which can be found on [this website](https://github.com/J-FHu/Fusformer). After downloading the datasets, you can place the training dataset [here](ADKNet_for_HSISR/training_data/) and the testing datasets [here](ADKNet_for_HSISR/test_data/).
 
 ## Installation and Dependencies
 ```shell
